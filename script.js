@@ -52,8 +52,10 @@ function game() {
     }
     if (compWins > playWins) {
         console.log('You lose :(');
-    } else {
+    } else if(playWins > compWins) {
         console.log('You win :)');
+    } else {
+        console.log('Tie!');
     }
 }
 
