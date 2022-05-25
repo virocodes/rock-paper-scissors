@@ -35,7 +35,7 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     let compWins = 0;
     let playWins = 0;
-    for(let i = 0; i < 5; i++) {
+    while (compWins < 5 && playWins < 5) {
         let playerPromt = prompt('Rock, Paper, or Scissors?');
         let compPrompt = computerPlay();
         let round = playRound(playerPromt, compPrompt);
