@@ -42,6 +42,7 @@ const results = document.querySelector('.results');
 const totals = document.querySelector('.totals');
 const playAgain = document.createElement('button');
 playAgain.textContent = 'Play Again!';
+playAgain.className = 'play_again';
 
 
 function buttonClick(button) {
@@ -64,7 +65,7 @@ function buttonClick(button) {
             rock.style.display = 'none';
             paper.style.display = 'none';
             scissors.style.display = 'none';
-            document.body.prepend(playAgain);
+            document.body.querySelector('.buttons').append(playAgain);
         }
     });
 }
